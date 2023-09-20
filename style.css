@@ -6,19 +6,28 @@
 
 body {
   font-family: 'Muli', sans-serif;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   height: 100vh;
   overflow: hidden;
   margin: 0;
   background-color: black;
+  /* display: flex; */  /*se ajusta al container no al body */
+}
+
+ h1 {
+  
+ margin: auto; /* ajuste predefinido de acuerdo al contenido */
+ margin-right: 18px;
+ 
 }
 
 .container {
   display: flex;
-  width: 90vw;
+  margin: 32px;
+  /* width: 90vw; */  /* no recomendable ya que el contenido adicional se ajusta al container como un ajuste de texto */
 }
+
 
 .panel {
   background-size: cover;
@@ -62,4 +71,10 @@ body {
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
 }
